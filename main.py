@@ -31,7 +31,7 @@ if __name__ == "__main__":
     # Initialize controlled producers
     controlled_producers = [
         ControlledProducer("Producer1", 500, linear_price),
-        ControlledProducer("Producer2", 600, tiered_price)
+        ControlledProducer("Producer2", 700, tiered_price)
     ]
 
     # Initialize market agents (using PCSUnit for flexibility)

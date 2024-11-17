@@ -139,6 +139,9 @@ def plot_statistics(stats):
         width=bar_width,
     )
 
+    # Add the original demand as a black line with dots
+    plt.plot(x_indices, demands, color='black', marker='o', label='Original Demand', linewidth=2)
+
     # Configure chart
     plt.title('Demand and Supply Breakdown Over Time')
     plt.xlabel('Timestamp')
@@ -147,6 +150,7 @@ def plot_statistics(stats):
     plt.legend()
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.show()
+
 
 
 
